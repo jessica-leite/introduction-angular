@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Alurapic';
+  src = 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Little-Fairy-Girl.jpg';
+  alt = 'fada';
 }
