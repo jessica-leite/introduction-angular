@@ -1,3 +1,1 @@
-<ap-photo description='fada' url='https://upload.wikimedia.org/wikipedia/commons/6/6f/Little-Fairy-Girl.jpg'></ap-photo>
-<ap-photo description= 'ave' url= 'https://live.staticflickr.com/5324/6926412742_a7cc48cc02_b.jpg'></ap-photo>
-
+<ap-photo *ngFor = 'let photo of photos' [description]='photo.description' [url]='photo.url'></ap-photo>
