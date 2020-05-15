@@ -8,20 +8,20 @@ import { SignInComponent } from './home/signin/signin.component';
 
 const routes: Routes = [
     { path: '', component: SignInComponent },
-    { path: 'user/:userName', 
-    component: PhotoListComponent,
-    resolve:{
-        photos: PhotoListResolver
-    } 
+    {
+        path: 'user/:userName', component: PhotoListComponent,
+        resolve: {
+            photos: PhotoListResolver
+        }
     },
     { path: 'p/add', component: PhotoFormComponent },
     { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
-    declarations:[],
-    imports:[ RouterModule.forRoot(routes) ],
-    exports: [ RouterModule ]
+    declarations: [],
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 
 })
-export class AppRoutingModule{}
+export class AppRoutingModule { }
