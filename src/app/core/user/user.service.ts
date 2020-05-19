@@ -11,7 +11,7 @@ export class UserService {
 
     constructor(private tokenService: TokenService) {
 
-        this.tokenService.hasToken && this.decodeAndNotify();
+        this.tokenService.hasToken() && this.decodeAndNotify();
     }
 
     setToken(token: string) {
@@ -19,7 +19,7 @@ export class UserService {
         this.decodeAndNotify();
     }
 
-    getUser() { 
+    getUser() {
         return this.userSubject.asObservable();
     }
 
