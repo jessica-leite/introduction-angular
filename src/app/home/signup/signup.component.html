@@ -19,7 +19,7 @@
         <ap-vmessage *ngIf="signupForm.get('userName').errors?.required" text="User name is required"></ap-vmessage>
         <ap-vmessage *ngIf="signupForm.get('userName').errors?.minlength" text="Minimum length is 2"></ap-vmessage>
         <ap-vmessage *ngIf="signupForm.get('userName').errors?.maxlength" text="Maximum length is 30"></ap-vmessage>
-        <ap-vmessage *ngIf="signupForm.get('userName').errors?.pattern" text="Must be lower case"></ap-vmessage>
+        <ap-vmessage *ngIf="signupForm.get('userName').errors?.lowercase" text="Must be lower case"></ap-vmessage>
     </div>
 
     <div class="form-group">
